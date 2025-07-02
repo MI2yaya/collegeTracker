@@ -44,6 +44,7 @@ main {
     background-color: rgb(0, 23, 34);
 }
 #move{
+    padding-inline: 20px;
     width: 100%;
     height: 100%;
     transform: translateY(100%);
@@ -51,10 +52,11 @@ main {
     transition: transform 1s ease-out, opacity 1s ease-out;
 }
 #move h1{
-    font-size: 3rem;
+    font-size: 5rem;
 }
 #move h2{
-    font-size: 2rem;
+    font-size:11rem;
+    text-align: center;
 }
 #move.show {
     transform: translateY(0);

@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+    font-family: Inter, sans-serif;
     color: #FFFBDE;
 }
 
@@ -23,7 +22,7 @@ html,body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px; 
+    padding-block: 10px; 
     background-color: #749BC2;
     border-bottom: 2px solid #4682A9; 
     
@@ -33,7 +32,7 @@ html,body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 25px; 
+    padding-block: 25px; 
     background-color: #749BC2;
     text-align: center; 
     position: relative;
@@ -42,6 +41,7 @@ html,body{
 }
 
 .left {
+    padding-inline: 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -55,6 +55,7 @@ html,body{
 }
 
 .right {
+    padding-inline: 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -73,4 +74,10 @@ html,body{
 .footer-link {
     text-decoration: none;
     color: inherit; 
+    margin-inline: 10px;
+    padding-inline: 25px;
+    padding-block: 10px;
+    border-radius: 10px;
+    border: 1px solid #4682A9;
+    background-color: #91C8E4;
 }
