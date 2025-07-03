@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="Cross-Origin-Opener-Policy" content="same-origin-allow-popups">
+    <title>Account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/account.css') }}">
+</head>
+
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <div id="signIn">
+            <p>Sign in stuff TBA, this doesnt work yet...</p>
+            <div id="googleSignIn">
+                <div id="g_id_onload"
+                data-client_id="473779720729-mihbj8d20d7bltjvq9c16i7i2cipjdcm.apps.googleusercontent.com"
+                data-context="signin"
+                data-ux_mode="popup"
+                data-callback="handleCredentialResponse"
+                data-auto_prompt="false">
+                </div>
+                <div class="g_id_signin"
+                    data-type="standard"
+                    data-shape="rectangular"
+                    data-theme="outline"
+                    data-text="signin_with"
+                    data-size="large"
+                    data-logo_alignment="left">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+</body>
+
+
+
+<script src="{{ url_for('static', filename='JS/global/loadTemplates.js') }}" defer></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="{{ url_for('static', filename='JS/account/handleLogin.js') }}" defer></script>

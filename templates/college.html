@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/college.css') }}">
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div id="yourColleges">
+            <h1> Your List! </h1>
+            <ul>
+                <li>Ex</li>
+            </ul>
+        </div>
+        <div id="allColleges">
+            <h1> All Colleges </h1>
+            <ul>
+                <li>Ex 2.</li>
+            </ul>
+        </div>
+    </main>
+    <div id="footer"></div>
+</body>
+
+
+<script src="{{ url_for('static', filename='JS/global/loadTemplates.js') }}" defer></script>
+<script src="{{ url_for('static', filename='JS/college/addColleges.js') }}" defer></script>
+
+

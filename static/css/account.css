@@ -1,0 +1,29 @@
+
+body{
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+main {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    background-color: pink;
+}
+
+#signIn{
+    height:60%;
+    width: 30%;
+    background-color: blue;
+    padding: 25px;
+    border-radius: 8px;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+#googleSignIn{
+    width: 150px;
+}
