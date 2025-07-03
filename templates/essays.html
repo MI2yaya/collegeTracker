@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="Cross-Origin-Opener-Policy" content="same-origin-allow-popups">
+    <title>Account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/essays.css') }}">
+</head>
+
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <div id="essay">
+            <div id="essayEntry">
+                <h1 id="essayPrompt">Prompt will go here</h1>
+                <textarea class="essayText" placeholder="Write your response here"></textarea>
+            </div>
+            <div id="essayChooser">
+                <div id="leftSide">
+                    <button type="button" class="essayButton selected" value="Common App Essay">Common App</button>
+                    <button type="button" class="essayButton" value="Common App Activities">Common App Activities</button>
+                </div>
+
+                <div id="rightSide">
+                    <button type="button" id="previousEssayBtn">Previous</button>
+                    <button type="button" id="nextEssayBtn">Next</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+</body>
+
+
+
+<script src="{{ url_for('static', filename='JS/global/loadTemplates.js') }}" defer></script>
+<script src="{{ url_for('static', filename='JS/essays/loadEssays.js') }}" defer></script>

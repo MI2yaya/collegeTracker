@@ -29,6 +29,11 @@ def college():
 def get_colleges_function():
     return get_colleges()
 
+#essays.html
+@app.route("/essays")
+def essays():
+    return render_template("essays.html")
+
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))  # Use PORT from environment or default to 5000
     app.run(host='0.0.0.0', port=port, debug=True)

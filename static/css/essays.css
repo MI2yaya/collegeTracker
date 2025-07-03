@@ -1,0 +1,81 @@
+
+body{
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+main {
+    flex: 1; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+}
+
+#essay {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #749BC2;
+}
+
+#essayEntry{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px 20px;
+}
+
+#essayPrompt{
+    text-align: center;
+}
+
+.essayText {
+    flex: 1;
+    resize: none;
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    color: black;
+}
+
+#essayChooser{
+    padding: 10px 20px;
+    background-color: #4682A9;
+    display: flex;
+    flex-direction: row;
+}
+#essayChooser button{
+    padding: 10px 20px;
+    margin: 0px 10px;
+    color: black;
+}
+.essayButton.selected {
+    background-color: #749BC2;
+    color: white;
+    font-weight: bold;
+}
+
+#leftSide{
+    width:20%;
+
+} 
+#rightSide{
+    display: flex;
+    justify-content: flex-end; 
+    width: 80%;
+}
